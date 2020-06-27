@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CountryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="275sp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/country_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20sp"
+            >
+
+            <LinearLayout
+                android:layout_width="5sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="8sp"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/holo_orange_dark"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/country_name"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26sp"
+                android:text="Algeria"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/holo_orange_dark"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70sp"
+                android:layout_height="45sp"
+                android:layout_marginRight="20sp"
+                app:cardCornerRadius="10dp"
+                android:layout_centerVertical="true"
+                app:cardElevation="5dp"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:layout_alignParentRight="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/country_flag"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:alpha="1"
+                        android:contentDescription="TODO" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+<!--        Description -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="5sp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="8sp"
+                android:background="@android:color/holo_orange_dark"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5sp"
+                android:paddingLeft="12sp"
+                android:text="Description"
+                android:textColor="#5E5E5E"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20sp"
+            android:layout_marginLeft="10sp">
+
+            <TextView
+                android:id="@+id/country_description"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="7sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a description..."
+                android:textColor="#777777"
+                android:lineSpacingExtra="7sp"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+<!--        Surface -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="5sp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="8sp"
+                android:background="@android:color/holo_orange_dark"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5sp"
+                android:paddingLeft="12sp"
+                android:text="Surface"
+                android:textColor="#5E5E5E"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20sp"
+            android:layout_marginLeft="10sp">
+
+            <TextView
+                android:id="@+id/country_surface"
+                android:textStyle="normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.985 million km²"
+                android:textColor="#777777"
+                android:textSize="18sp"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+<!--        Population -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="5sp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="8sp"
+                android:background="@android:color/holo_orange_dark"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5sp"
+                android:paddingLeft="12sp"
+                android:text="Population"
+                android:textColor="#5E5E5E"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20sp"
+            android:layout_marginLeft="10sp">
+
+            <TextView
+                android:id="@+id/country_population"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40.5 million (2019)"
+                android:textColor="#777777"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+<!--        Main Resources -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="5sp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="8sp"
+                android:background="@android:color/holo_orange_dark"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5sp"
+                android:paddingLeft="12sp"
+                android:text="Pricipales Ressources"
+                android:textColor="#5E5E5E"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20sp"
+            android:layout_marginLeft="10sp">
+
+            <TextView
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petrol"
+                android:textColor="#777777"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+<!--        Main Personalities -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="5sp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="8sp"
+                android:background="@android:color/holo_orange_dark"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5sp"
+                android:paddingLeft="12sp"
+                android:text="Principales Personnalités"
+                android:textColor="#5E5E5E"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20sp"
+            android:layout_marginLeft="10sp">
+
+            <TextView
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Algerian"
+                android:textColor="#777777"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+
+
+<!--        l’hymne national -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="5sp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="8sp"
+                android:background="@android:color/holo_orange_dark"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5sp"
+                android:paddingLeft="12sp"
+                android:text="L’hymne National"
+                android:textColor="#5E5E5E"
+                android:layout_gravity="left"/>
+
+        </LinearLayout>
+<!--        Media Player-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="20sp"
+                android:gravity="center">
+
+
+                <ImageButton
+                    android:id="@+id/pauseBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:src="@drawable/ic_pause_black_24dp"
+                    android:background="@android:color/transparent" />
+
+                <ImageButton
+                    android:id="@+id/playBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12sp"
+                    android:src="@drawable/ic_play_arrow_black_24dp"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/stopBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:src="@drawable/ic_stop_black_24dp"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
