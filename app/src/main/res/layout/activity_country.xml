@@ -398,6 +398,65 @@
 
         </LinearLayout>
 
+        <!--            Youtube videos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="5sp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="8sp"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5sp"
+                android:paddingLeft="12sp"
+                android:text="Videos Youtube"
+                android:textColor="#5E5E5E"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.7"
+                android:paddingLeft="12sp"
+                android:text="Swipe"
+                android:textColor="#5E5E5E"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20sp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/youtube_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
 </ScrollView>

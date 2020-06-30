@@ -31,6 +31,11 @@ class CountryActivity : AppCompatActivity() {
         val adapter = CountryPagerAdapter(supportFragmentManager, country.images)
         viewPager.adapter = adapter
 
+        // set up the youtube view pager
+        val viewPagerYoutube = youtube_view_pager
+        val adapterYoutube = YoutubePagerAdapter(supportFragmentManager, country.youtubeVideos)
+        viewPagerYoutube.adapter = adapterYoutube
+
         Picasso.get().load(country.flag).into(country_flag)
         country_name.text = country.name
         country_description.text = country.description

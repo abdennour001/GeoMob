@@ -51,7 +51,7 @@ class CountryImageFragment : Fragment() {
 
             val params = LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
             params.setMargins(8, 0, 8, 0)
-            for (i in 0..count) {
+            for (i in 0 until count) {
                 val dot = ImageView(context)
                 if (i == position) {
                     dot.setImageDrawable(context?.let { ContextCompat.getDrawable(it, R.drawable.active_dot) })

@@ -18,8 +18,9 @@ data class Country (
     @ColumnInfo(name="mainResources") var mainResources: List<String>,
     @ColumnInfo(name="mainPersonalities") var mainPersonalities: List<String>,
     @ColumnInfo(name="images") var images: List<String>,
-    @ColumnInfo(name="anthem_url") var anthemUrl: String
+    @ColumnInfo(name="anthem_url") var anthemUrl: String,
+    @ColumnInfo(name="youtubeVideos") var youtubeVideos: List<String>
 
-) : Serializable {
-    constructor():this(0, "", "", "", 0.0, 0.0, listOf(""), listOf(""), listOf(""), "")
+    ) : Serializable {
+    constructor():this(0, "", "", "", 0.0, 0.0, listOf(""), listOf(""), listOf(""), "", listOf(""))
 }
